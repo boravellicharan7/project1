@@ -1,0 +1,175 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(./img/main_banner.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Popular Places */
+.popular-places {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+    place-items: center;
+}
+
+/* Feature */
+.feature {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/*Blog*/
+.card-img {
+    width: 700px;
+}
+
+/* Pricing */
+.pricing {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Map */
+.map {
+    margin-top: 50px;
+}
+
+/* Footer */
+.section-container8 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+}
+
+.section-container8-child1 {
+    width: 400px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .pricing .plan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
